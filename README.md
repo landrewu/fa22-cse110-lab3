@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# CSE110 Lab #3
 
-https://landrewu.github.io/Lab2_Starter/
+https://landrewu.github.io/fa22-cse110-lab3/
