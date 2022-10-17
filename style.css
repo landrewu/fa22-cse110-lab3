@@ -85,6 +85,7 @@ details:active {
 }
 
 form {
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: [first] 200px [line2] 500px [end];
     grid-template-rows: [row1-start] 5rem [row1-end] 5rem [third-line] 5rem [fourth-line] 5rem [last-line];
