@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Sora', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap");
+}
+
+@font-face {
+    font-family: 'Merriweather', serif;
+    src: url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+}
+
+a[href^="index.html"] {
+    color: darkgoldenrod;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+body span {
+    display: inline;
+}
+
+body span + body strong {
+    border: 2px solid cyan;
+    padding: .1em, .1em, .2em, .2em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5ch;
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather', serif;
+    text: black;
+}
+
+@media (max-width: 1000px) {
+    body {
+        font-size: smaller;
+    }
+    h2 > h3 {
+        font-family: 'Merriweather', serif;
+        font-size: larger;
+    }
+}
+
+@media (min-width: 1001px) {
+    body {
+        font-size: medium;
+    }
+    h2 h3 {
+        font-family: 'Merriweather', serif;
+        font-size: xx-large;
+    }
+}
+
+#main-items,
+#actions {
+    text-decoration: underline red;
+    display: inline-block;
+    background-color: #ffbebe;
+    width: 25rem;
+    border: 2px lightpink;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button:hover {
+    color: blue;
+}
+
+details:active {
+    background-color: lightblue;
+}
+
+form {
+    display: grid;
+    grid-template-columns: [first] 200px [line2] 500px [end];
+    grid-template-rows: [row1-start] 5rem [row1-end] 5rem [third-line] 5rem [fourth-line] 5rem [last-line];
+    grid-row-gap: 1em;
+    border-color: gray;
+    border-style: outset;
+    background-color: linen;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+}
+
+.item1 {
+    grid-row: 1 / 2;
+}
+
+.item2 {
+    grid-row: 2 / 3;
+}
+
+.item3 {
+    grid-row: 3 / 4;
+}
+
+.item4 {
+    grid-row: 4 / 5;
+}
+
+img {
+    max-width: fit-content;
+    max-height: fit-content;
+    min-width: 300px;
+    height: auto;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+}
+
+section.main {
+    margin-left: 1rem;
+    position: sticky;
+}
