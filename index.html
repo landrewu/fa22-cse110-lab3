@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head class="h">
+    <style>
+      body {
+        background-image: linear-gradient(linen 39%, rgb(204, 204, 204) 96%);
+      }
+      </style>
     <title> CSE 110 Lab 2 </title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <meta name="author" content="Andrew Lu">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
+    <header style="display: block;">
       Saturday, October 8th, 2023 - 
       <span><strong>Kevin</strong>, Andrew, Thomas, Jimmy, Bobby, Timmy</span> 
     </header>
@@ -51,11 +57,11 @@
       <br>
       <hr>
     </section>
-    <section id="main">
+    <section class="main">
       <h3>
         Main Topics
       </h3>
-      <ul>
+      <ul id="main-items">
         <li>We must come up with ideas.</li>
         <li>These ideas must be excellent</li>
         <li>These ideas must fit the project criteria.</li>
@@ -65,7 +71,7 @@
       <br>
       Kevin brought up the concern that we have no ideas.
       This is us:<br>
-      <img src="lightbulb.jpg" alt="lightbulb" width="300" height="300">
+      <img src="lightbulb.jpg" alt="lightbulb" width="300" height="300"><br>
       <br> Here are our ideas:<br>
       <img src="whiteboard.jpg" alt="whiteboard" width="500" height="300">
     </section>
@@ -84,27 +90,27 @@
       <hr>
       <h1>Feedback Form</h1>
       <form>
-        <fieldset>
+        <fieldset style ="border: 0;">
           Name:
           <input type="text" id="name"><br><br>
-          <p>
+          <p class="item1">
             <label for="type">What type of feedback are you giving?</label>
             <input list="types" name="type" id="type">
             <datalist id="types">
-              <option value="Edge">
-              <option value="Firefox">
-              <option value="Chrome">
-              <option value="Opera">
-              <option value="Safari">
+              <option value="Bug">
+              <option value="Suggestion">
+              <option value="Missed Topics">
+              <option value="Contact Group Member">
+              <option value="Other">
             </datalist>
           </p>
-          <p>
-            <label for="w3review">Feedback:</label><br>
-            <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+          <p class="item2">
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
           </p>
-          <p>
+          <p class="item3">
             Form of Contact:
-            <select id="contact">
+            <select id="contact" style="background-color: #ffe8e8;">
               <option value="Email">Email</option>
               <option value="Phone">Phone</option>
               <option value="Fax">Fax</option>
@@ -112,7 +118,7 @@
               <option value="Mail a Letter">Mail a Letter</option>
             </select>
           </p>
-          <button>Submit Feedback</button>
+          <button class="item4">Submit Feedback</button>
         </fieldset>
       </form>
     </section>
